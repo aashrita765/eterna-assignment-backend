@@ -1,0 +1,59 @@
+{
+  "resources": [
+    {
+      "_id": "env_eterna_assignment",
+      "parentId": "wrk_eterna_assignment",
+      "modified": 0,
+      "created": 0,
+      "name": "Base Environment",
+      "data": {
+        "baseUrl": "http://127.0.0.1:3000",
+        "orderId": ""
+      },
+      "type": "Environment"
+    },
+    {
+      "_id": "req_execute_order",
+      "parentId": "wrk_eterna_assignment",
+      "modified": 0,
+      "created": 0,
+      "name": "POST Execute Order",
+      "method": "POST",
+      "url": "{{ baseUrl }}/api/orders/execute",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"side\": \"buy\",\n  \"tokenIn\": \"USDC\",\n  \"tokenOut\": \"SOL\",\n  \"amount\": 10\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "type": "Request",
+      "settingStoreCookies": true,
+      "settingSendCookies": true
+    },
+    {
+      "_id": "req_ws_status",
+      "parentId": "wrk_eterna_assignment",
+      "modified": 0,
+      "created": 0,
+      "name": "WS Order Status",
+      "url": "ws://127.0.0.1:3000/api/orders/ws?orderId={{ orderId }}",
+      "type": "WebSocketRequest"
+    },
+    {
+      "_id": "wrk_eterna_assignment",
+      "parentId": null,
+      "modified": 0,
+      "created": 0,
+      "name": "Eterna Assignment",
+      "type": "Workspace"
+    }
+  ],
+  "__export_format": 4,
+  "__export_date": "2025-11-21T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app"
+}
