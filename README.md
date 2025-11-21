@@ -149,22 +149,6 @@ It contains:
 - WebSocket subscription
 - Sample test orders
 
-# Deployment
-
-Backend deployed on:
-```
-<your-public-url>
-```
-
-(TODO: add after deploying on Railway / Render)
-
-# Video Demo 
-
-YouTube video link:
-```
-<your-video-link>
-```
-
 
 # Design Decisions
 - Queue-based architecture ensures high scalability
