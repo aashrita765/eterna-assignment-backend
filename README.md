@@ -137,11 +137,11 @@ Covers:
 ```
 npm test
 ```
-# Postman / Insomnia Collection
+# Insomnia Collection
 
-Postman collection available at:
+Insomnia collection available at:
 ```
-/postman/eterna_assignment_backend.json
+/insomnia/insomnia-collection.json
 ```
 
 It contains:
